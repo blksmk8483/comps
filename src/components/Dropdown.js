@@ -11,7 +11,7 @@ function Dropdown({ options, selection, onSelect }) {
         // CLOSE DROPDOWN
         setIsOpen(false);
         // WHAT OPTION DID THE USER CLICK ON???
-        onselect(option);
+        onSelect(option);
     };
 
     const renderedOptions = options.map((option) => {
