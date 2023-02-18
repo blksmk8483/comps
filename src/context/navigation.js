@@ -1,4 +1,3 @@
-import { func } from "prop-types";
 import { createContext } from "react";
 
 const NavigationContext = createContext();
