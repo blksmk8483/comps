@@ -10,8 +10,10 @@ function ModalPage() {
     };
 
     return (
-        <div>
-            <Button onClick={handleClick} primary>Open Modal</Button>
+        <div className='relative'>
+            <Button onClick={handleClick} primary>
+                Open Modal
+                </Button>
             {showModal && <Modal />}
         </div>
     );
