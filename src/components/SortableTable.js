@@ -8,6 +8,13 @@ function SortableTable(props) {
     const { config, data } = props;
 
     const handleClick = (label) => {
+        if (sortBy && label !== sortBy) {
+            setSortOrder('asc');
+            setSortBy(label);
+            return;
+        }
+
+
         if (sortOrder === null) {
             setSortOrder('asc');
             setSortBy(label);
@@ -55,10 +62,9 @@ function SortableTable(props) {
         });
     }
 
-    return <div>
-        {sortOrder} - {sortBy}
+    return (
         <Table {...props} data={sortedData} config={updatedConfig} />
-    </div>
+    )
 };
 
 function getIcons(label, sortBy, sortOrder) {
