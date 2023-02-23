@@ -5,26 +5,26 @@ function ButtonPage() {
     const handleClick = () => {
         console.log('You clicked me!')
     }
-    
+
     return (
         <div>
             <div>
                 <Button success rounded outline className="mb-5" onClick={handleClick}>
                     < GoBell />
                     Hello
-                    </Button>
+                </Button>
             </div>
             <div>
                 <Button danger outline >
                     < GoCloudDownload />
                     Test Me
-                    </Button>
+                </Button>
             </div>
             <div>
                 <Button warning >
                     < GoDatabase />
                     Buy Now
-                    </Button>
+                </Button>
             </div>
             <div>
                 <Button secondary outline>CLICK HERE</Button>

@@ -9,15 +9,15 @@ function DropdownPage() {
     };
 
     const options = [
-        { label : 'Red', value: 'red' },
-        { label : 'Green', value: 'green' },
-        { label : 'Blue', value: 'blue' },
+        { label: 'Red', value: 'red' },
+        { label: 'Green', value: 'green' },
+        { label: 'Blue', value: 'blue' },
     ]
 
     return (
         <div className="flex">
-            <Dropdown options={options} value={selection} onChange={handleSelect}/>
-    </div>
+            <Dropdown options={options} value={selection} onChange={handleSelect} />
+        </div>
     );
 };
 
