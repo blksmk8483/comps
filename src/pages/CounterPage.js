@@ -15,7 +15,7 @@ const reducer = (state, action) => {
             state.count = state.count + 1;
             return;
         case DECREMENT_COUNT:
-            state.count = state.count + 1;
+            state.count = state.count - 1;
             return;
         case SET_VALUE_TO_ADD:
            state.valueToAdd = action.payload;
